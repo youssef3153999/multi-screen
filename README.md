@@ -1,32 +1,58 @@
-# Digital Signage System for Restaurants (Low-Cost Solution)
-# Multi-Screen VLC Setup
+# Multi-Screen VLC Digital Signage
 
-## Overview
+## 🚀 Overview
 
-This project automatically plays videos on multiple screens using VLC and PowerShell.
+A lightweight digital signage solution for multi-screen environments using PowerShell and VLC.
 
-## Features
+Designed for real-world usage in restaurants, kiosks, and retail displays.
 
-* Play different videos on multiple monitors
-* Control window position via WinAPI
-* Fullscreen playback
-* Delay between screens (e.g. 20 seconds)
-* Auto-start via Windows Startup
+---
 
-## Requirements
+## 💡 Use Case
 
-* Windows OS
-* VLC Media Player installed
-* Multiple monitors (at least 3)
+A restaurant setup with:
 
-## Setup
+* 3 HDMI screens
+* Promotional videos
+* Delayed playback between screens
 
-1. Edit paths inside the script:
+This solution replaces expensive digital signage systems with a simple, automated script.
 
-   * VLC path
-   * Video file paths
+---
 
-2. Example:
+## 🖥️ Demo
+
+![Demo](assets/demo.png)
+
+---
+
+## ⚙️ Features
+
+* Multi-screen video playback
+* Fullscreen VLC automation
+* Screen positioning using WinAPI
+* Playback delay between screens
+* Auto-start on system boot
+* No external software required (except VLC)
+
+---
+
+## 🧠 Architecture
+
+![Architecture](assets/setup.png)
+
+* PowerShell controls window placement
+* WinAPI handles screen positioning
+* VLC handles media playback
+
+---
+
+## 🛠️ Setup
+
+1. Install VLC:
+   https://www.videolan.org/vlc/
+
+2. Update paths in script:
 
 ```powershell
 $vlcPath = "C:\Program Files\VideoLAN\VLC\vlc.exe"
@@ -34,20 +60,15 @@ $videoRecht = "C:\Videos\recht.mp4"
 $videoLinks = "C:\Videos\links.mp4"
 ```
 
-## Run
-
-Run manually:
+3. Run script:
 
 ```bash
 powershell -ExecutionPolicy Bypass -File video-1-2-3.ps1
 ```
 
-Or use:
+---
 
-* start.bat for delayed startup
-* or convert to .exe
-
-## Startup
+## 🔁 Auto Start
 
 Place `start.bat` in:
 
@@ -55,11 +76,17 @@ Place `start.bat` in:
 shell:startup
 ```
 
-## Notes
+---
 
-* Do not store videos inside this repo
-* Adjust screen positions based on your setup
+## 📈 Why This Project Matters
 
-## Author
+* Demonstrates Windows automation skills
+* Uses WinAPI for real system control
+* Practical real-world deployment
+* Low-cost alternative to enterprise solutions
+
+---
+
+## 👨‍💻 Author
 
 Youssef Al Ali
