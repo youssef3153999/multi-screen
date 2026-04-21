@@ -1,4 +1,4 @@
-# multi-screen
+# Digital Signage System for Restaurants (Low-Cost Solution)
 # Multi-Screen VLC Setup
 
 ## Overview
